@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Idea Centrl LLC</title>
+  <meta name="description" content="Idea Centrl LLC is a small software company in Utah that designs and builds mobile apps, including AItrainr.">
+  <link rel="canonical" href="https://ideacentrl.com/">
+  <meta property="og:title" content="Idea Centrl LLC">
+  <meta property="og:description" content="Simple, useful apps from a small software company in Utah.">
+  <meta property="og:url" content="https://ideacentrl.com/">
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --card: #ffffff;
+      --text: #16181d;
+      --muted: #5c6370;
+      --line: #e4e4e0;
+      --accent: #3b5bdb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111317;
+        --card: #1a1d23;
+        --text: #eceef2;
+        --muted: #a2a9b6;
+        --line: #2a2e36;
+        --accent: #8ea2ff;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+    header { padding: 28px 0 0; }
+    .brand { font-weight: 700; font-size: 18px; letter-spacing: 0.2px; }
+    .hero { padding: 72px 0 48px; }
+    .hero h1 { font-size: clamp(34px, 6vw, 52px); line-height: 1.08; margin: 0 0 16px; letter-spacing: -0.5px; }
+    .hero p { font-size: 18px; color: var(--muted); margin: 0; max-width: 560px; }
+    h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--muted); margin: 0 0 14px; }
+    section { padding: 24px 0; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+    .card img { width: 64px; height: 64px; border-radius: 14px; flex-shrink: 0; }
+    .card h3 { margin: 0 0 6px; font-size: 20px; }
+    .card p { margin: 0 0 12px; color: var(--muted); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .link { font-weight: 600; }
+    .contact p { margin: 0 0 6px; }
+    footer {
+      border-top: 1px solid var(--line);
+      margin-top: 48px;
+      padding: 22px 0 40px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 480px) {
+      .hero { padding: 48px 0 32px; }
+      .card { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap"><div class="brand">Idea Centrl LLC</div></div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <h1>Simple, useful apps.</h1>
+      <p>Idea Centrl LLC is a small software company in Utah. We design and build mobile apps that make everyday goals easier to reach.</p>
+    </div>
+
+    <section aria-labelledby="apps">
+      <h2 id="apps">Our apps</h2>
+      <div class="card">
+        <img src="assets/aitrainr-icon.png" alt="AItrainr app icon" width="64" height="64">
+        <div>
+          <h3>AItrainr</h3>
+          <p>An AI personal trainer for iPhone and Android. It builds your workout plan, logs your sets as you talk, and keeps you on track week to week.</p>
+          <a class="link" href="https://aitrainr.app">Learn more at aitrainr.app →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p>Email: <a href="mailto:hello@ideacentrl.com">hello@ideacentrl.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Idea Centrl LLC. All rights reserved. This site uses no cookies or tracking.</div>
+  </footer>
+</body>
+</html>
